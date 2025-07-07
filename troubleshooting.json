@@ -1,0 +1,346 @@
+{
+  "solutions": [
+    {
+      "category": "BSOD",
+      "problems": [
+        {
+          "id": "bsod_1",
+          "problem": "CRITICAL_PROCESS_DIED",
+          "steps": [
+            "Update all drivers using Windows Update or manufacturer's website.",
+            "Run System File Checker using command: sfc /scannow.",
+            "Use Windows Memory Diagnostic to check for RAM issues.",
+            "Perform a clean boot to identify problematic background programs."
+          ],
+          "technical_details": "Occurs when a critical system process fails due to corrupted files, faulty drivers, or memory issues."
+        },
+        {
+          "id": "bsod_2",
+          "problem": "IRQL_NOT_LESS_OR_EQUAL",
+          "steps": [
+            "Update all drivers in Device Manager.",
+            "Run Windows Memory Diagnostic to check for RAM issues.",
+            "Run disk check using command: chkdsk /f /r.",
+            "Uninstall any recent Windows updates that might have caused the issue."
+          ],
+          "technical_details": "Caused by faulty drivers or memory corruption leading to invalid memory access."
+        },
+        {
+          "id": "bsod_3",
+          "problem": "PAGE_FAULT_IN_NONPAGED_AREA",
+          "steps": [
+            "Run Windows Memory Diagnostic to check for RAM issues.",
+            "Update all device drivers.",
+            "Check the hard drive for issues using chkdsk /f /r.",
+            "Uninstall recently added software that could be causing conflicts."
+          ],
+          "technical_details": "Occurs when the system requests data that is not in memory, often due to hardware or driver problems."
+        },
+        {
+          "id": "bsod_4",
+          "problem": "SYSTEM_SERVICE_EXCEPTION",
+          "steps": [
+            "Ensure Windows is up-to-date by checking Windows Update.",
+            "Update all drivers using Device Manager.",
+            "Run System File Checker (sfc /scannow) to check for corrupt files.",
+            "Scan for malware using Windows Defender or another antivirus program."
+          ],
+          "technical_details": "Happens due to outdated drivers, software conflicts, or malware infections."
+        },
+        {
+          "id": "bsod_5",
+          "problem": "VIDEO_TDR_FAILURE (atikmpag.sys, nvlddmkm.sys)",
+          "steps": [
+            "Update graphics drivers from NVIDIA, AMD, or Intel websites.",
+            "Ensure the GPU is not overheating by monitoring temperatures.",
+            "Uninstall and reinstall the latest graphics driver.",
+            "Check if the graphics card is properly seated and functional."
+          ],
+          "technical_details": "Occurs due to graphics driver failures, overheating, or hardware malfunctions."
+        },
+        {
+          "id": "bsod_6",
+          "problem": "DPC_WATCHDOG_VIOLATION",
+          "steps": [
+            "Update SSD firmware from the manufacturer's website.",
+            "Update SATA controller drivers in Device Manager.",
+            "Run System File Checker (sfc /scannow) to check for corrupted files.",
+            "Uninstall any recently installed software that may be causing conflicts."
+          ],
+          "technical_details": "Often caused by outdated SSD firmware or incompatible drivers."
+        },
+        {
+          "id": "bsod_7",
+          "problem": "SYSTEM_THREAD_EXCEPTION_NOT_HANDLED",
+          "steps": [
+            "Update all drivers in Device Manager.",
+            "Run System File Checker using command: sfc /scannow.",
+            "Check RAM using Windows Memory Diagnostic.",
+            "Boot into Safe Mode to troubleshoot faulty drivers."
+          ],
+          "technical_details": "Typically related to driver conflicts or corrupted system files."
+        }
+      ]
+    },
+    {
+      "category": "Keyboard and Mouse",
+      "problems": [
+        {
+          "id": "kb_mouse_1",
+          "problem": "Keyboard Not Responding",
+          "steps": [
+            "Check if the keyboard is properly connected (for wired keyboards).",
+            "Try using another USB port or reconnect the wireless receiver.",
+            "Restart the computer and check if the keyboard works.",
+            "Update or reinstall the keyboard drivers via Device Manager.",
+            "Test the keyboard on another device to check for hardware failure."
+          ],
+          "technical_details": "Keyboard issues can arise from loose connections, outdated drivers, or hardware failure."
+        },
+        {
+          "id": "kb_mouse_2",
+          "problem": "Certain Keys Not Working",
+          "steps": [
+            "Check if the key is physically stuck or dirty; clean it gently.",
+            "Test the keyboard in another application or device.",
+            "Run the Windows Keyboard Troubleshooter in Settings > Update & Security > Troubleshoot.",
+            "Update keyboard drivers in Device Manager.",
+            "Use an external keyboard if the issue persists to check for hardware failure."
+          ],
+          "technical_details": "Keys may stop working due to dirt, driver issues, or physical damage."
+        },
+        {
+          "id": "kb_mouse_3",
+          "problem": "Mouse Not Moving or Clicking",
+          "steps": [
+            "Check if the mouse is connected properly (for wired mice).",
+            "Try another USB port or change the batteries (for wireless mice).",
+            "Restart the computer and check if the mouse starts working.",
+            "Update or reinstall mouse drivers in Device Manager.",
+            "Test the mouse on another device to rule out hardware failure."
+          ],
+          "technical_details": "Mouse issues may be caused by loose connections, low battery, or driver corruption."
+        },
+        {
+          "id": "kb_mouse_4",
+          "problem": "Mouse Pointer Lagging or Freezing",
+          "steps": [
+            "Try using a different USB port or reconnect the wireless receiver.",
+            "Check if the mouse sensor is clean and free of dust.",
+            "Lower pointer speed in Settings > Devices > Mouse.",
+            "Update the mouse driver via Device Manager.",
+            "Disable pointer precision in Control Panel > Mouse Settings."
+          ],
+          "technical_details": "Lagging or freezing may occur due to interference, software settings, or driver issues."
+        },
+        {
+          "id": "kb_mouse_5",
+          "problem": "Touchpad Not Working on Laptop",
+          "steps": [
+            "Press the touchpad enable/disable shortcut key (often Fn + F7 or similar).",
+            "Go to Settings > Devices > Touchpad and ensure it is enabled.",
+            "Update or reinstall the touchpad drivers in Device Manager.",
+            "Restart the laptop and check if the touchpad responds.",
+            "If using an external mouse, disconnect it and test the touchpad again."
+          ],
+          "technical_details": "The touchpad may be disabled in settings, blocked by an external mouse, or have driver-related issues."
+        }
+      ]
+    },
+    {
+      "category": "Overheating",
+      "problems": [
+        {
+          "id": "overheat_1",
+          "problem": "Laptop or PC is overheating",
+          "steps": [
+            "Shut down the device and let it cool for a few minutes before restarting.",
+            "Ensure the air vents are not blocked and clean them using compressed air.",
+            "Keep the device on a hard, flat surface instead of soft materials like beds or couches.",
+            "Close unused applications in Task Manager to reduce CPU load.",
+            "Check if the cooling fan is working properly; replace it if needed."
+          ],
+          "technical_details": "Overheating can be caused by blocked air vents, excessive CPU usage, or a failing cooling system."
+        },
+        {
+          "id": "overheat_2",
+          "problem": "Fan running loud or constantly at full speed",
+          "steps": [
+            "Restart the device to see if the fan noise reduces.",
+            "Clean dust buildup inside the fan using compressed air.",
+            "Check for background applications consuming high CPU in Task Manager and close them.",
+            "Update BIOS and drivers to ensure fan control is optimized.",
+            "If the issue persists, consider replacing the cooling fan."
+          ],
+          "technical_details": "Fans run at high speeds when the system overheats, often due to dust buildup, high CPU usage, or outdated firmware."
+        },
+        {
+          "id": "overheat_3",
+          "problem": "Device shuts down due to overheating",
+          "steps": [
+            "Let the device cool down before turning it on again.",
+            "Check if the cooling vents are clear and clean them if necessary.",
+            "Reduce multitasking by closing unnecessary programs.",
+            "Adjust power settings to 'Balanced' or 'Power Saver' mode to reduce heat.",
+            "Use a cooling pad or external fan to improve airflow."
+          ],
+          "technical_details": "Overheating shutdowns happen when the CPU or GPU reaches critical temperatures, triggering automatic protection."
+        },
+        {
+          "id": "overheat_4",
+          "problem": "Overheating while gaming or heavy tasks",
+          "steps": [
+            "Lower in-game graphics settings to reduce GPU and CPU load.",
+            "Ensure the cooling fans are clean and functioning properly.",
+            "Keep the laptop or PC in a well-ventilated area to improve airflow.",
+            "Check for driver updates, especially GPU drivers.",
+            "Consider repasting thermal paste on the CPU/GPU if overheating persists."
+          ],
+          "technical_details": "Gaming and heavy tasks increase CPU/GPU load, leading to excess heat if cooling isn't sufficient."
+        },
+        {
+          "id": "overheat_5",
+          "problem": "Battery overheating",
+          "steps": [
+            "Remove the charger and let the laptop cool down.",
+            "Avoid using the device while charging for long periods.",
+            "Check battery health in 'Settings > Power & Battery'.",
+            "Replace an old or swollen battery immediately.",
+            "Use an original charger to prevent overheating issues."
+          ],
+          "technical_details": "Battery overheating can occur due to overcharging, old batteries, or using non-certified chargers."
+        }
+      ]
+    },
+    {
+      "category": "Ports",
+      "problems": [
+        {
+          "id": "ports_1",
+          "problem": "USB Ports Not Working",
+          "steps": [
+            "Check if the USB device works on another port or another computer.",
+            "Restart the computer and try the port again.",
+            "Update or reinstall USB drivers via Device Manager.",
+            "Disable USB Selective Suspend in Power Options.",
+            "Check for debris or physical damage inside the USB port."
+          ],
+          "technical_details": "USB ports may stop working due to driver issues, power settings, or physical damage."
+        },
+        {
+          "id": "ports_2",
+          "problem": "HDMI Port Not Working",
+          "steps": [
+            "Ensure the HDMI cable is securely connected to both the device and the monitor/TV.",
+            "Try using a different HDMI cable or port.",
+            "Update graphics drivers in Device Manager.",
+            "Right-click on the desktop and select 'Display Settings' to detect the external display.",
+            "Restart the device with the HDMI cable connected."
+          ],
+          "technical_details": "HDMI issues may be caused by driver conflicts, faulty cables, or incorrect display settings."
+        },
+        {
+          "id": "ports_3",
+          "problem": "Ethernet Port Not Working",
+          "steps": [
+            "Check if the Ethernet cable is securely connected and not damaged.",
+            "Try using a different cable or connecting to a different router port.",
+            "Restart the router and computer.",
+            "Update network drivers via Device Manager.",
+            "Run network troubleshooting by going to Settings > Network & Internet > Troubleshoot."
+          ],
+          "technical_details": "Ethernet port issues may arise due to driver problems, cable faults, or network configuration errors."
+        },
+        {
+          "id": "ports_4",
+          "problem": "Audio Jack Not Working",
+          "steps": [
+            "Check if the headphone or speaker works with another device.",
+            "Ensure the audio output device is set correctly in Sound Settings.",
+            "Update or reinstall audio drivers via Device Manager.",
+            "Clean the audio jack for dust or debris.",
+            "Try using an external USB audio adapter as a workaround."
+          ],
+          "technical_details": "Audio jacks may fail due to driver issues, incorrect settings, or hardware defects."
+        },
+        {
+          "id": "ports_5",
+          "problem": "Charging Port Not Working",
+          "steps": [
+            "Check if the charger and power outlet are functional by testing with another device.",
+            "Inspect the charging port for dust or debris and clean it carefully.",
+            "Try using a different charger or cable.",
+            "Restart the device and check if charging resumes.",
+            "If the issue persists, check for hardware failure or battery issues."
+          ],
+          "technical_details": "Charging ports can stop working due to power adapter failures, debris in the port, or hardware damage."
+        }
+      ]
+    },
+    {
+      "category": "Slow Performance",
+      "problems": [
+        {
+          "id": "perf_1",
+          "problem": "High CPU or Memory Usage",
+          "steps": [
+            "Open Task Manager (Ctrl + Shift + Esc) and check which processes are using the most resources.",
+            "End unnecessary high-usage processes by right-clicking and selecting 'End Task'.",
+            "Disable unnecessary startup programs using Task Manager > Startup tab.",
+            "Run Windows Update to ensure system is up-to-date.",
+            "Check for malware using Windows Defender or another antivirus software."
+          ],
+          "technical_details": "High CPU and memory usage can slow down performance, often due to background processes, software conflicts, or malware."
+        },
+        {
+          "id": "perf_2",
+          "problem": "Slow Boot Time",
+          "steps": [
+            "Disable unnecessary startup programs via Task Manager > Startup tab.",
+            "Perform a disk cleanup to remove temporary files using 'cleanmgr'.",
+            "Check for disk errors by running 'chkdsk /f /r' in Command Prompt.",
+            "Update drivers, especially graphics and chipset drivers.",
+            "Consider upgrading to an SSD for faster boot times."
+          ],
+          "technical_details": "Slow boot times may be caused by too many startup programs, hard drive issues, or outdated drivers."
+        },
+        {
+          "id": "perf_3",
+          "problem": "Laggy or Freezing Applications",
+          "steps": [
+            "Ensure your system meets the software's minimum requirements.",
+            "Close unnecessary background applications.",
+            "Clear temporary files and cache from the system and browsers.",
+            "Update or reinstall problematic applications.",
+            "Run Windows Memory Diagnostic to check for RAM issues."
+          ],
+          "technical_details": "Software lag can be due to insufficient system resources, memory issues, or corrupted application files."
+        },
+        {
+          "id": "perf_4",
+          "problem": "Low Disk Space",
+          "steps": [
+            "Check available storage by opening 'This PC' and reviewing disk space.",
+            "Use 'Disk Cleanup' to remove temporary and system files.",
+            "Uninstall unused applications via Settings > Apps.",
+            "Move large files to an external drive or cloud storage.",
+            "Enable Storage Sense to automatically free up space."
+          ],
+          "technical_details": "Running low on storage can cause performance issues, especially if the system drive is nearly full."
+        },
+        {
+          "id": "perf_5",
+          "problem": "Outdated or Corrupt Drivers",
+          "steps": [
+            "Open 'Device Manager' and check for drivers with warning symbols.",
+            "Update drivers using Windows Update or manufacturer's website.",
+            "Rollback recent driver updates if the issue started after an update.",
+            "Uninstall and reinstall problematic drivers.",
+            "Restart the system after updating drivers to apply changes."
+          ],
+          "technical_details": "Outdated or corrupt drivers can cause system slowdowns and application crashes."
+        }
+      ]
+    }
+  ]
+}
