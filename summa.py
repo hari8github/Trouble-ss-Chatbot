@@ -254,9 +254,9 @@ def provide_solution(user_issue: str, say, thread_ts: str):
 {summary}
 
 *Need Additional Help?*
-📌 *Create Support Ticket:* https://elluciansupport.service-now.com/esc
-📌 *Join Support Channel:* #help-it (/ticket)
-📌 *Contact Support Team:* help-it@ellucian.com
+📌 *Create Support Ticket:* 
+📌 *Join Support Channel:* 
+📌 *Contact Support Team:* 
         """, thread_ts=thread_ts)
         context["resolved"] = True
 
